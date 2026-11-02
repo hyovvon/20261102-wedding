@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7f3ee" />
+  <meta name="description" content="민준과 서연의 결혼식에 소중한 분들을 초대합니다." />
+  <title>김민준 ♥ 이서연 | 모바일 청첩장</title>
+  <!-- 사진은 인터넷 링크가 아닌 assets/images 폴더의 실제 파일을 사용합니다. -->
+  <link rel="preload" as="image" href="./assets/images/hero-couple.webp" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="site-shell" id="top">
+    <!-- ① 상단 메뉴: 각 메뉴 클릭 시 아래의 해당 영역으로 이동합니다. -->
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="맨 처음으로 이동">M <span>&</span> S</a>
+      <nav class="main-nav" aria-label="페이지 메뉴">
+        <a href="#home">HOME</a>
+        <a href="#story">STORY</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#location">LOCATION</a>
+      </nav>
+      <a class="header-heart" href="#account" aria-label="마음 전하실 곳으로 이동">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 8.4c0 4.4-8.5 10.3-8.5 10.3S3.5 12.8 3.5 8.4a4.2 4.2 0 0 1 8.5-1 4.2 4.2 0 0 1 8.5 1Z"/></svg>
+      </a>
+    </header>
+
+    <main>
+      <!-- ② 첫 화면: 이름, 날짜, 대표 웨딩 사진 -->
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-heading">
+          <p class="eyebrow">THE WEDDING OF</p>
+          <h1 class="couple-names" id="hero-title">김 민 준 <span class="name-heart" aria-label="그리고">♥</span> 이 서 연</h1>
+          <p class="hero-message">서로의 오늘이 되어,<br />함께 더 빛날 내일을 약속합니다.</p>
+          <p class="hero-date">2027. 05. 22 <span>SATURDAY</span></p>
+        </div>
+        <div class="hero-photo-frame">
+          <img src="./assets/images/hero-couple.webp" alt="노을 아래 나란히 서 있는 신랑과 신부의 뒷모습" width="682" height="548" fetchpriority="high" />
+          <div class="hero-photo-gradient"></div>
+          <p class="hero-photo-caption">Our beautiful beginning</p>
+        </div>
+        <div class="hero-bottom-decoration" aria-hidden="true">✳ <span>·</span> ✳</div>
+      </section>
+
+      <!-- ③ 초대의 글 -->
+      <section class="invitation section-pad" aria-labelledby="invitation-title">
+        <img class="invitation-flower" src="./assets/decor-sprig.svg" alt="" loading="lazy" />
+        <p class="script-heading">Invitation</p>
+        <h2 class="visually-hidden" id="invitation-title">초대합니다</h2>
+        <p class="invitation-message">소중한 분들을 모시고<br />저희 두 사람이 새로운 시작을 하려 합니다.<br />함께하시어 저희의 첫걸음을<br />따뜻한 마음으로 축복해 주세요.</p>
+        <div class="fine-divider"><span></span></div>
+        <div class="parents">
+          <p><span class="parent-name">김철수 · 박영희</span> 의 아들 <strong>민준</strong></p>
+          <p><span class="parent-name">이영수 · 최은정</span> 의 딸 <strong>서연</strong></p>
+        </div>
+      </section>
+
+      <!-- ④ 우리 이야기 -->
+      <section class="story section-pad" id="story" aria-labelledby="story-title">
+        <div class="section-heading section-heading-left">
+          <p class="eyebrow">OUR MOMENTS</p>
+          <h2 id="story-title" class="serif-title">Our Story</h2>
+          <p class="section-description">서로의 일상이 특별해진 순간부터,<br />지금까지, 그리고 앞으로도<br />함께 걷고 싶습니다.</p>
+        </div>
+        <div class="story-photo-pair">
+          <img src="./assets/images/story-hands.webp" alt="꽃다발을 들고 손을 맞잡은 두 사람" loading="lazy" width="326" height="382" />
+          <img src="./assets/images/story-walk.webp" alt="들판을 함께 걷는 커플의 흑백 사진" loading="lazy" width="268" height="382" />
+        </div>
+        <div class="story-timeline" aria-label="우리의 이야기">
+          <div><strong>2022</strong><span>처음 만난 날</span></div>
+          <div><strong>2024</strong><span>서로를 더 깊이 알게 된 시간</span></div>
+          <div><strong>2027</strong><span>함께할 내일</span></div>
+        </div>
+        <div class="story-ending">
+          <div class="short-rule"></div>
+          <p class="script-heading">Better<br /><span>Together</span></p>
+          <p>지금, 그리고 언제나<br />함께</p>
+        </div>
+      </section>
+
+      <!-- ⑤ 갤러리: 사진을 누르면 크게 보는 팝업이 열립니다. -->
+      <section class="gallery section-pad" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <p class="eyebrow">GALLERY</p>
+          <h2 id="gallery-title" class="serif-title korean-title">우리의 순간들</h2>
+          <p class="section-description">평범한 하루들이 모여,<br />특별한 이야기가 되었습니다.</p>
+        </div>
+        <div class="gallery-grid">
+          <button type="button" class="gallery-item gallery-wide" data-caption="서로에게 가장 가까운 순간" aria-label="첫 번째 웨딩 사진 크게 보기"><img src="./assets/images/gallery-portrait.webp" alt="서로 이마를 맞대고 웃는 신랑과 신부" width="588" height="402" loading="lazy" /></button>
+          <button type="button" class="gallery-item" data-caption="평생의 약속" aria-label="두 번째 웨딩 사진 크게 보기"><img src="./assets/images/gallery-rings.webp" alt="청첩장 위에 놓인 결혼반지" width="264" height="266" loading="lazy" /></button>
+          <button type="button" class="gallery-item" data-caption="우리의 꽃처럼 아름다운 날" aria-label="세 번째 웨딩 사진 크게 보기"><img src="./assets/images/gallery-bouquet.webp" alt="하얀 꽃과 초록 잎이 어우러진 부케" width="308" height="266" loading="lazy" /></button>
+          <button type="button" class="gallery-item gallery-wide gallery-landscape" data-caption="같은 곳을 바라보며" aria-label="네 번째 웨딩 사진 크게 보기"><img src="./assets/images/gallery-beach.webp" alt="노을 진 해변에서 손을 잡고 있는 두 사람" width="586" height="340" loading="lazy" /></button>
+          <button type="button" class="gallery-item" data-caption="모든 순간을 소중히" aria-label="다섯 번째 웨딩 사진 크게 보기"><img src="./assets/images/gallery-table.webp" alt="화이트 플라워와 식기로 꾸민 웨딩 테이블" width="292" height="258" loading="lazy" /></button>
+          <button type="button" class="gallery-item" data-caption="앞으로도 나란히" aria-label="여섯 번째 웨딩 사진 크게 보기"><img src="./assets/images/gallery-walking.webp" alt="신랑 신부가 나란히 걷는 뒷모습" width="280" height="258" loading="lazy" /></button>
+        </div>
+        <p class="gallery-hint"><span aria-hidden="true">⌕</span> 사진을 눌러 크게 감상해 보세요.</p>
+      </section>
+
+      <!-- ⑥ 문장과 장식 -->
+      <section class="quote-section section-pad" aria-label="두 사람의 다짐">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <p>좋은 사람과 함께라면<br />어떤 하루도 빛날 거라는 걸<br />이제는 압니다.<br />늘 그랬듯, 서로의 곁에서<br />잘 걸어가겠습니다.</p>
+        <div class="botanical" aria-hidden="true">
+          <svg viewBox="0 0 120 128"><path d="M40 118C56 85 58 47 84 8"/><path d="M56 87c-21 4-31-5-33-19 20-1 31 6 33 19ZM66 63c-13-14-12-26-4-36 13 11 17 23 4 36ZM77 36C94 23 103 26 109 36 95 47 86 45 77 36ZM49 103c-18-7-27-2-33 9 18 8 26 4 33-9Z"/></svg>
+        </div>
+      </section>
+
+      <!-- ⑦ 예식 일시: 날짜는 2027년 5월 22일 토요일로 설정되어 있습니다. -->
+      <section class="wedding-day section-pad" id="wedding-day" aria-labelledby="wedding-title">
+        <div class="section-heading">
+          <p class="eyebrow">WEDDING DAY</p>
+          <h2 id="wedding-title" class="serif-title korean-title">예식 안내</h2>
+          <div class="ornament-line"><span>✦</span></div>
+        </div>
+        <p class="date-large">2027 <span>·</span> 05 <span>·</span> 22</p>
+        <p class="day-line">토요일 오후 2시</p>
+        <p class="venue-line">그랜드 워커힐 서울</p>
+        <!-- 달력은 script.js가 예식 날짜를 기준으로 자동으로 생성합니다. -->
+        <div class="calendar" aria-label="2027년 5월 달력">
+          <p class="calendar-month">MAY <span>2027</span></p>
+          <div class="calendar-weekdays"><span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span></div>
+          <div class="calendar-days" id="calendar-days"></div>
+        </div>
+        <div class="wedding-details">
+          <div class="detail-row">
+            <div class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="1.8"/><path d="M7.5 2.5v5M16.5 2.5v5M3.5 10h17"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 17.5h.01M12 17.5h.01" stroke-linecap="round" stroke-width="2"/></svg></div>
+            <div><strong>날짜</strong><p>2027년 05월 22일 (토요일)<br />오후 02시 00분</p></div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-7.3 7-12a7 7 0 0 0-14 0c0 4.7 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+            <div><strong>예식장</strong><p>그랜드 워커힐 서울<br />서울특별시 광진구 워커힐로 177</p></div>
+          </div>
+        </div>
+        <img class="venue-image" src="./assets/images/wedding-hall.webp" alt="화이트 플라워 아치로 장식된 웨딩홀" width="576" height="362" loading="lazy" />
+      </section>
+
+      <!-- ⑧ 위치와 지도: 지도는 예시 약도이며 구글 지도 버튼은 실제 위치 검색을 엽니다. -->
+      <section class="location section-pad" id="location" aria-labelledby="location-title">
+        <div class="section-heading">
+          <div class="short-rule"></div>
+          <p class="eyebrow">LOCATION</p>
+          <h2 id="location-title" class="serif-title korean-title">오시는 길</h2>
+        </div>
+        <a class="map-preview" href="https://www.google.com/maps/search/?api=1&amp;query=%EA%B7%B8%EB%9E%9C%EB%93%9C%20%EC%9B%8C%EC%BB%A4%ED%9E%90%20%EC%84%9C%EC%9A%B8" target="_blank" rel="noopener noreferrer" aria-label="구글 지도에서 그랜드 워커힐 서울 위치 보기">
+          <img src="./assets/map-preview.svg" alt="그랜드 워커힐 서울을 표시한 안내용 약도" width="500" height="300" loading="lazy" />
+          <span class="map-badge">안내용 약도</span>
+        </a>
+        <h3>그랜드 워커힐 서울</h3>
+        <p class="address">서울특별시 광진구 워커힐로 177</p>
+        <a class="outline-button map-button" href="https://www.google.com/maps/search/?api=1&amp;query=%EA%B7%B8%EB%9E%9C%EB%93%9C%20%EC%9B%8C%EC%BB%A4%ED%9E%90%20%EC%84%9C%EC%9A%B8" target="_blank" rel="noopener noreferrer">구글 지도로 길찾기 <span aria-hidden="true">→</span></a>
+        <p class="map-note">정확한 경로는 연결된 지도 앱에서 확인해 주세요.</p>
+      </section>
+
+      <!-- ⑨ 계좌 복사 버튼: 클릭 시 script.js에서 복사를 시도하고 팝업을 표시합니다. -->
+      <section class="account section-pad" id="account" aria-labelledby="account-title">
+        <div class="section-heading">
+          <div class="short-rule"></div>
+          <p class="eyebrow">WITH GRATITUDE</p>
+          <h2 id="account-title" class="serif-title korean-title">마음 전하실 곳</h2>
+          <p class="section-description">축하의 마음을 전해주시는 분들께<br />감사한 마음으로 전하겠습니다.</p>
+        </div>
+        <div class="account-list">
+          <div class="account-card">
+            <div class="account-main"><span class="account-role">신랑</span><strong>김민준</strong><p>신한은행 <span class="account-number">000-000-000000</span></p></div>
+            <button class="copy-button" type="button" data-owner="신랑 김민준" data-bank="신한은행" data-account="000-000-000000" aria-label="신랑 김민준 계좌번호 복사">복사</button>
+          </div>
+          <div class="account-card">
+            <div class="account-main"><span class="account-role">신부</span><strong>이서연</strong><p>국민은행 <span class="account-number">000000-00-000000</span></p></div>
+            <button class="copy-button" type="button" data-owner="신부 이서연" data-bank="국민은행" data-account="000000-00-000000" aria-label="신부 이서연 계좌번호 복사">복사</button>
+          </div>
+        </div>
+        <p class="sample-note">* 이름·일정·장소·계좌번호는 수정 가능한 예시 정보입니다.</p>
+      </section>
+
+      <!-- ⑩ 하단 인사말 -->
+      <footer class="footer">
+        <div class="footer-top"><img src="./assets/decor-sprig.svg" alt="" loading="lazy" /></div>
+        <p class="script-heading">Thank you</p>
+        <p class="footer-korean">함께해 주셔서<br />감사합니다.</p>
+        <p class="footer-names">MINJUN <span>&</span> SEOYEON</p>
+        <p class="footer-copyright">WITH LOVE · MAY 22, 2027</p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- 사진 확대 팝업: 닫기, 이전/다음 사진 버튼, ESC 키를 지원합니다. -->
+  <dialog class="lightbox" id="photo-dialog" aria-label="웨딩 사진 확대 보기">
+    <div class="lightbox-content">
+      <button class="dialog-close lightbox-close" type="button" aria-label="사진 팝업 닫기">×</button>
+      <img id="lightbox-image" src="./assets/images/gallery-portrait.webp" alt="확대된 웨딩 사진" />
+      <div class="lightbox-toolbar">
+        <button type="button" id="previous-photo" aria-label="이전 사진">←</button>
+        <div><span id="lightbox-caption"></span><small id="lightbox-counter"></small></div>
+        <button type="button" id="next-photo" aria-label="다음 사진">→</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 계좌 복사 결과 팝업: 브라우저에서 복사를 허용하지 않을 때는 안내 문구 표시 -->
+  <dialog class="copy-dialog" id="copy-dialog" aria-labelledby="copy-dialog-title">
+    <div class="copy-dialog-inner">
+      <button class="dialog-close copy-close" type="button" aria-label="계좌 팝업 닫기">×</button>
+      <div class="copy-check" aria-hidden="true">✓</div>
+      <h2 id="copy-dialog-title">계좌번호 안내</h2>
+      <p id="copy-status" role="status"></p>
+      <p id="copy-owner" class="copy-owner"></p>
+      <p id="copy-account-text" class="copy-account-text"></p>
+      <button id="copy-again" type="button" class="solid-button">계좌번호 다시 복사</button>
+      <button id="copy-confirm" type="button" class="plain-button">닫기</button>
+    </div>
+  </dialog>
+
+  <a class="to-top" href="#top" aria-label="맨 위로 이동">↑</a>
+</body>
+</html>
